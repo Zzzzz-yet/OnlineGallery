@@ -1,0 +1,18 @@
+[ 
+{
+    "id": "img001",
+    "type": "image",
+    "title": "Mountain Aerial",
+    "src": "/public/images/mountain.jpeg",
+    "tags": ["nature", "aerial"],
+    "date": "2025-06-23"
+  },
+  {
+    "id": "vid001",
+    "type": "video",
+    "title": "River Flight",
+    "src": "https://www.youtube.com",
+    "tags": ["water", "flight"],
+    "date": "2025-06-12"
+  }
+]
