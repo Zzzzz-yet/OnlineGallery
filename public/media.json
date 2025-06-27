@@ -1,22 +1,52 @@
 [
   {
-    "src": "images/Fireplace.jpeg",
-    "alt": "Fireplace.jpeg"
+    "src": "images/prepped/aerial/mountain.jpeg",
+    "alt": "mountain",
+    "category": "aerial"
   },
   {
-    "src": "images/Loft Layout.jpeg",
-    "alt": "Loft Layout.jpeg"
+    "src": "images/prepped/homepage/Loft Layout.jpeg",
+    "alt": "Loft Layout",
+    "category": "homepage"
   },
   {
-    "src": "images/kitchen.jpeg",
-    "alt": "kitchen.jpeg"
+    "src": "images/prepped/nature/village landscape pic.jpg",
+    "alt": "village landscape pic",
+    "category": "nature"
   },
   {
-    "src": "images/mountain.jpeg",
-    "alt": "mountain.jpeg"
+    "src": "images/prepped/prepped/Fireplace.jpeg",
+    "alt": "Fireplace",
+    "category": "prepped"
   },
   {
-    "src": "images/village landscape pic.jpg",
-    "alt": "village landscape pic.jpg"
+    "src": "images/prepped/prepped/Loft Layout.jpeg",
+    "alt": "Loft Layout",
+    "category": "prepped"
+  },
+  {
+    "src": "images/prepped/prepped/kitchen.jpeg",
+    "alt": "kitchen",
+    "category": "prepped"
+  },
+  {
+    "src": "images/prepped/prepped/mountain.jpeg",
+    "alt": "mountain",
+    "category": "prepped"
+  },
+  {
+    "src": "images/prepped/prepped/village landscape pic.jpg",
+    "alt": "village landscape pic",
+    "category": "prepped"
+  },
+  {
+    "src": "images/prepped/urban/Fireplace.jpeg",
+    "alt": "Fireplace",
+    "category": "urban"
+  },
+  {
+    "src": "images/prepped/urban/kitchen.jpeg",
+    "alt": "kitchen",
+    "category": "urban"
   }
 ]

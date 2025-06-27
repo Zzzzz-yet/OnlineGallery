@@ -1,89 +1,50 @@
 ---
---- 
+import NavBar from '../components/NavBar.astro';
+---
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Drone Gallery</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <style>
-      body {
-        margin: 0; padding: 0;
-        font-family: sans-serif;
-        background: #f5f5f5;
-      }
-      .gallery {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 1rem;
-        padding: 1rem;
-      }
-      .gallery-item {
-        position: relative;
-      }
-      .gallery-item img {
-        width: 100%;
-        border-radius: 8px;
-        display: block;
-      }
-      .gallery-item .overlay {
-        position: absolute;
-        top: 0; left: 0;
-        width: 100%; height: 100%;
-        background: rgba(0,0,0,0);
-        z-index: 10;
-      }
-      footer {
-        text-align: center;
-        padding: 1rem;
-        color: #888;
-        background: #fff;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="gallery" id="gallery"></div>
-    <footer>
-      © 2025 ZoeChow9005. All rights reserved. No unauthorized use.
-    </footer>
-
-    <script>
-window.addEventListener('DOMContentLoaded', () => {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home - ZoeChow Gallery</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <NavBar />
+  <main class="p-4">
+    <h1 class="text-3xl font-bold mb-4">Welcome to ZoeChow's Gallery</h1>
+    <div id="gallery" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4"></div>
+  </main>
+  <script type="module">
   fetch('/media.json')
     .then(res => res.json())
     .then(media => {
       const gallery = document.getElementById('gallery');
-      media.forEach(item => {
+      const filtered = media.filter(item => item.category === 'homepage');
+      filtered.forEach(item => {
         const div = document.createElement('div');
-        div.className = 'gallery-item';
-
+        div.className = 'relative group overflow-hidden';
         const img = document.createElement('img');
-        img.src = `/${item.src}`;
+        img.src = '/' + item.src;
         img.alt = item.alt;
-        img.draggable = false;
-
+        img.className = 'w-full h-auto';
         const overlay = document.createElement('div');
-        overlay.className = 'overlay';
-
+        overlay.className = 'absolute inset-0 bg-black opacity-0 group-hover:opacity-40 transition';
         div.appendChild(img);
         div.appendChild(overlay);
-
         gallery.appendChild(div);
       });
     });
-
-  document.addEventListener('contextmenu', e => {
-    e.preventDefault();
-    alert('Right-click disabled to protect our work.');
-  });
-
-  document.addEventListener('keydown', e => {
-    if ((e.ctrlKey && e.shiftKey && e.key === 'I') || 
-        (e.ctrlKey && e.key === 'u')) {
-      e.preventDefault();
-      alert('Developer tools disabled on this site.');
-    }
-  });
-});
 </script>
-  </body>
+  <script>
+    document.addEventListener('contextmenu', e => {
+      e.preventDefault();
+      alert('Right-click is disabled to protect our work.');
+    });
+  </script>
+</body>
 </html>
+
+
+
+
+

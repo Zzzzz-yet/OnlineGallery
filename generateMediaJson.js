@@ -1,15 +1,25 @@
 import fs from 'fs';
 import path from 'path';
 
-const imgDir = path.join(process.cwd(), 'public/images');
-const files = fs.readdirSync(imgDir).filter(f =>
-  ['.jpg', '.jpeg', '.png', '.webp'].includes(path.extname(f).toLowerCase())
-);
+const preppedRoot = './public/images/prepped';
+const mediaJsonPath = './public/media.json';
 
-const media = files.map(f => ({
-  src: `images/${f}`,
-  alt: f
-}));
+let media = [];
 
-fs.writeFileSync(path.join(process.cwd(), 'public/media.json'), JSON.stringify(media, null, 2));
-console.log(`media.json generated with ${media.length} items`);
+fs.readdirSync(preppedRoot).forEach(category => {
+  const categoryPath = path.join(preppedRoot, category);
+  if (!fs.lstatSync(categoryPath).isDirectory()) return;
+
+  fs.readdirSync(categoryPath).forEach(file => {
+    if (/\.(jpe?g|png)$/i.test(file)) {
+      media.push({
+        src: `images/prepped/${category}/${file}`,
+        alt: file.replace(/\..+$/, ''),
+        category: category
+      });
+    }
+  });
+});
+
+fs.writeFileSync(mediaJsonPath, JSON.stringify(media, null, 2));
+console.log('media.json generated.');

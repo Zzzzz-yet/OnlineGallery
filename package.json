@@ -9,8 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.11",
     "astro": "^5.10.0",
-    "sharp": "^0.34.2"
+    "sharp": "^0.34.2",
+    "tailwindcss": "^4.1.11"
   },
   "description": "```sh npm create astro@latest -- --template minimal ```",
   "main": "index.js",
