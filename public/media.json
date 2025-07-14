@@ -1,37 +1,27 @@
 [
   {
-    "src": "images/prepped/aerial/OIP-C.OG6GA2lRkfaZ8aikbqQ5iQHaEo.jpeg",
-    "alt": "OIP-C",
+    "src": "images/prepped/aerial/Sample Image Illustration (4).png",
+    "alt": "Sample Image Illustration (4)",
     "category": "aerial"
   },
   {
-    "src": "images/prepped/aerial/OIP-C.ZWaaA23q_2YK-6vWNaw8NwHaEK.jpeg",
-    "alt": "OIP-C",
+    "src": "images/prepped/aerial/Sample Image Illustration (5).png",
+    "alt": "Sample Image Illustration (5)",
     "category": "aerial"
   },
   {
-    "src": "images/prepped/aerial/mountain.jpeg",
-    "alt": "mountain",
-    "category": "aerial"
-  },
-  {
-    "src": "images/prepped/homepage/Loft Layout.jpeg",
-    "alt": "Loft Layout",
+    "src": "images/prepped/homepage/Sample Image Illustration (1).png",
+    "alt": "Sample Image Illustration (1)",
     "category": "homepage"
   },
   {
-    "src": "images/prepped/nature/village landscape pic.jpg",
-    "alt": "village landscape pic",
+    "src": "images/prepped/nature/Sample Image Illustration (3).png",
+    "alt": "Sample Image Illustration (3)",
     "category": "nature"
   },
   {
-    "src": "images/prepped/urban/Fireplace.jpeg",
-    "alt": "Fireplace",
-    "category": "urban"
-  },
-  {
-    "src": "images/prepped/urban/kitchen.jpeg",
-    "alt": "kitchen",
+    "src": "images/prepped/urban/Sample Image Illustration (2).png",
+    "alt": "Sample Image Illustration (2)",
     "category": "urban"
   }
 ]
