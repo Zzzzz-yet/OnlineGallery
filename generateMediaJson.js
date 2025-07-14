@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 
 const preppedRoot = './public/images/prepped';
-const mediaJsonPath = './public/media.json';
+const outputJson = './public/media.json';
 
 let media = [];
 
@@ -21,5 +21,5 @@ fs.readdirSync(preppedRoot).forEach(category => {
   });
 });
 
-fs.writeFileSync(mediaJsonPath, JSON.stringify(media, null, 2));
+fs.writeFileSync(outputJson, JSON.stringify(media, null, 2));
 console.log('media.json generated.');

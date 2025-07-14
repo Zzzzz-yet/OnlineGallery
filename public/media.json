@@ -1,5 +1,15 @@
 [
   {
+    "src": "images/prepped/aerial/OIP-C.OG6GA2lRkfaZ8aikbqQ5iQHaEo.jpeg",
+    "alt": "OIP-C",
+    "category": "aerial"
+  },
+  {
+    "src": "images/prepped/aerial/OIP-C.ZWaaA23q_2YK-6vWNaw8NwHaEK.jpeg",
+    "alt": "OIP-C",
+    "category": "aerial"
+  },
+  {
     "src": "images/prepped/aerial/mountain.jpeg",
     "alt": "mountain",
     "category": "aerial"
@@ -13,31 +23,6 @@
     "src": "images/prepped/nature/village landscape pic.jpg",
     "alt": "village landscape pic",
     "category": "nature"
-  },
-  {
-    "src": "images/prepped/prepped/Fireplace.jpeg",
-    "alt": "Fireplace",
-    "category": "prepped"
-  },
-  {
-    "src": "images/prepped/prepped/Loft Layout.jpeg",
-    "alt": "Loft Layout",
-    "category": "prepped"
-  },
-  {
-    "src": "images/prepped/prepped/kitchen.jpeg",
-    "alt": "kitchen",
-    "category": "prepped"
-  },
-  {
-    "src": "images/prepped/prepped/mountain.jpeg",
-    "alt": "mountain",
-    "category": "prepped"
-  },
-  {
-    "src": "images/prepped/prepped/village landscape pic.jpg",
-    "alt": "village landscape pic",
-    "category": "prepped"
   },
   {
     "src": "images/prepped/urban/Fireplace.jpeg",

@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+/* The following is to set up the framework of the UI design of the page */
+/* Reset margins  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture{
+    margin:0;
+}
+
+/* Set up body - we're using the css framework to design the actual UI */
+body{
+    line-height:1.5;
+    min-height:100vh;
+}
+/* make image easier to work with */
+img,
+picture{
+    max-width:100%;
+    display:block;
+}
+/* Make forms elements easier to work with */
+input,
+button,
+textarea,
+select{
+    font:inherit;
+    color:inherit;
+}
+/* Remove animation when people choose to turned them off */
+@media (prefers-reduced-motion:reduce){
+    *,
+    *::before,
+    *:after {
+        animation-duration:0.01ms !important;
+        animation-iteration-count:1 !important;
+        transition-duration:0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+}
+
+
+
+/* next step will be working on the utility class */
+/*----------------------------------------------------*/
+/* Utility calsses.aka the function block.      area  */
+/*----------------------------------------------------*/
+
+.flex{
+    display:flex;
+    gap:var(--gap, 1rem);
+}
+
+.grid{
+    display:grid;
+    gap:var(--gap, 1rem);
+}
+
+/* To enrich the components for your page, you may need to add more containers the future. */
+.container{
+    padding-inline: 2em;
+    margin-inline: auto; /* this is the code to enforce the content in the page to be centered always */
+    max-width: 80rem;
+}   
+
+/* sr-only is used to hide the log-in-user content from the non-login visitors, usefuly function */
+/* This is how you may see this function on the page: a bar that is empty and as a visitor, you have no access to the content. */
+.sr-only{ 
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0, 0, 0);
+    white-space:nowrap;
+    border:0;
+}
+
+/* Next action, to do the exercise and go on to the next step of creating my own utility calss */
+/* exercise: the following ones should be working on the index.html file                */
+/* 1. Hold the content in the middle of the window w/o modifying the original setting   */
+/* 2. Wrap the content either in flex or grid.                                          */
+/* 3. try changing the gap variable without modifying the original                      */
+/* 4. Use the .sr-only class on a div                                                   */
+/* these will be done via the box set already in the index.html file.                   */
