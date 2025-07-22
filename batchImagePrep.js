@@ -7,6 +7,7 @@ const outputRoot = './public/images/prepped';
 const watermarkText = 'ZoeChow9005';
 
 fs.readdirSync(inputRoot).forEach(category => {
+  if (category.toLowerCase() === 'prepped') return;
   const categoryPath = path.join(inputRoot, category);
   if (!fs.lstatSync(categoryPath).isDirectory()) return;
   const outputDir = path.join(outputRoot, category);
